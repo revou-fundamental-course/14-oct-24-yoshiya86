@@ -1,0 +1,62 @@
+p {
+  font-family: Amaranth;
+  color: rgb(1, 1, 90);
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+  margin: 65px 100px 0 100px;
+}
+
+.header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: rgb(55, 212, 255);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0px 100px 0px 100px;
+  height: 55px;
+}
+.logohead {
+  justify-self: start;
+  margin-right: auto;
+}
+.logo {
+  height: 35px;
+}
+.navigation {
+  display: flex;
+  gap: 30px;
+}
+.nav {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.nav:hover {
+  color: rgb(255, 231, 235);
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+}
+.body {
+  font-size: 18px;
+}
+.home .body {
+  margin-bottom: 20px;
+}
+.slideshow {
+  width: 100%;
+}
+
+@media (min-width: 650px) {
+  body {
+    margin: 65px 50px 0 50px;
+  }
+}
