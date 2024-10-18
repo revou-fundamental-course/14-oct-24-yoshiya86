@@ -6,8 +6,15 @@ p {
 a {
   text-decoration: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 65px 100px 0 100px;
+  overflow-x: hidden;
+}
+.section {
+  margin-bottom: 30px;
 }
 
 .header {
@@ -44,6 +51,7 @@ body {
 .title {
   font-size: 36px;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 .body {
   font-size: 18px;
@@ -52,7 +60,70 @@ body {
   margin-bottom: 20px;
 }
 .slideshow {
+  height: 600px;
   width: 100%;
+  object-fit: cover;
+}
+
+.porto {
+  display: flex;
+  gap: 20px;
+}
+.card {
+  background-color: rgb(1, 1, 90);
+  padding: 10px;
+  position: relative;
+}
+.works {
+  width: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(1, 1, 90, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.overlay .body {
+  color: white;
+}
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.label {
+  font-family: Amaranth;
+  color: rgb(1, 1, 90);
+  font-size: 18px;
+  margin-bottom: 10px;
+  width: 100px;
+  display: inline-block;
+  text-align: left;
+}
+.form {
+  font-family: Amaranth;
+  color: rgb(1, 1, 90);
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 300px;
+}
+#mes {
+  float: left;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(55, 212, 255);
+  margin: 0 -100px 0 -100px;
+  height: 45px;
 }
 
 @media (min-width: 650px) {

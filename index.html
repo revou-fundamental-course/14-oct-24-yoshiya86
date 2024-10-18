@@ -22,13 +22,13 @@
           <a href="#home">
             <p class="nav">Home</p>
           </a>
-          <a href="">
+          <a href="#about">
             <p class="nav">About</p>
           </a>
-          <a href="">
+          <a href="#portfolio">
             <p class="nav">Portfolio</p>
           </a>
-          <a href="">
+          <a href="#message">
             <p class="nav">Message Us</p>
           </a>
         </div>
@@ -36,11 +36,91 @@
     </nav>
 
     <main>
-      <div id="home" class="home">
+      <div id="home" class="section home">
         <p class="title">Hello there! Welcome to my portfolio</p>
         <p class="body">This is a mini course by RevoU</p>
-        <img src="assets/GD6.jpg" class="slideshow" />
+        <div class="banner">
+          <img src="assets/GD6.jpg" class="slideshow" />
+        </div>
+      </div>
+
+      <div id="about" class="section about">
+        <p class="title">About</p>
+        <p class="body">
+          I am a diligent graphic designer from Indonesia with 3+ years of
+          experience in a professional field. My speciality is social media
+          design but, I'm good at video editing, UI design, and illustration
+          too.
+        </p>
+      </div>
+
+      <div id="portfolio" class="section portfolio">
+        <p class="title">Portfolio</p>
+        <div class="porto">
+          <div class="card">
+            <img class="works" src="assets/Porto-1.png" />
+            <a
+              class="overlay"
+              href="https://drive.google.com/drive/folders/1t6JSS9jrxsNL9WDLuRCQe0nMh0zh7Wje?usp=drive_link"
+              target="_blank"
+            >
+              <div>
+                <p class="body">Graphic design</p>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <img class="works" src="assets/Porto-2.png" />
+            <a
+              class="overlay"
+              href="https://drive.google.com/drive/folders/1t6JSS9jrxsNL9WDLuRCQe0nMh0zh7Wje?usp=drive_link"
+              target="_blank"
+            >
+              <div>
+                <p class="body">UI design</p>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <img class="works" src="assets/Porto-3.png" />
+            <a
+              class="overlay"
+              href="https://drive.google.com/drive/folders/1t6JSS9jrxsNL9WDLuRCQe0nMh0zh7Wje?usp=drive_link"
+              target="_blank"
+            >
+              <div>
+                <p class="body">Illustration</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="message" class="section message">
+        <p class="title">Message Us</p>
+        <form
+          action="https://drive.google.com/drive/folders/1t6JSS9jrxsNL9WDLuRCQe0nMh0zh7Wje?usp=drive_link"
+          method="post"
+        >
+          <label class="label" for="name">Name :</label>
+          <input class="form" type="text" /><br />
+          <label class="label" for="date">Birth date :</label>
+          <input class="form" type="date" /><br />
+          <label class="label" for="date">Gender :</label>
+          <input type="radio" id="Male" name="gender" value="Male" />
+          <label class="label" for="Male">Male</label>
+          <input type="radio" id="Female" name="gender" value="Female" />
+          <label class="label" for="Female">Female</label><br />
+          <label id="mes" class="label" for="message">Message :</label>
+          <textarea id="mes-area" class="form" name="message" id="message">
+              Type here...</textarea
+          >
+        </form>
       </div>
     </main>
+
+    <footer class="footer">
+      <p class="body">Created by Rels</p>
+    </footer>
   </body>
 </html>
