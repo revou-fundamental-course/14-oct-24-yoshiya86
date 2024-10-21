@@ -37,8 +37,33 @@
 
     <main>
       <div id="home" class="section home">
-        <p class="title">Hello there! Welcome to my portfolio</p>
-        <p class="body">This is a mini course by RevoU</p>
+        <div class="left">
+          <p class="title">
+            Hello <span id="opening">there</span>! Welcome to my portfolio
+          </p>
+          <p class="body">
+            This is a mini course by RevoU. I started as a designer and I'm
+            interested in UI design, so I took a free online course by RevoU.
+            <br /><br />
+            <strong>Wanna see something cool?</strong>
+          </p>
+          <div class="js">
+            <button id="yes">Yes!!</button>
+            <button
+              onclick="
+          alert('continue scrolling then~')"
+            >
+              No
+            </button>
+          </div>
+        </div>
+
+        <!--
+        <input class="form" type="text" id="name" />
+        <button id="submit">Submit</button>
+        <p id="error-mes"></p>
+        -->
+
         <div class="banner">
           <img src="assets/GD6.jpg" class="slideshow" />
         </div>
@@ -50,7 +75,12 @@
           I am a diligent graphic designer from Indonesia with 3+ years of
           experience in a professional field. My speciality is social media
           design but, I'm good at video editing, UI design, and illustration
-          too.
+          too. I'm interested in UI design, so I took an Interaction design
+          major. Then, I start to learn about HTML & CSS so I have a basic
+          knowledge at designing UI with code. After that, I tried to learn JS
+          and here I am joining free online course by RevoU <br /><br />
+          <strong>See my portfolio below!</strong> <br />
+          who knows we'll be a great workmates!
         </p>
       </div>
 
@@ -100,10 +130,11 @@
         <p class="title">Message Us</p>
         <form
           action="https://drive.google.com/drive/folders/1t6JSS9jrxsNL9WDLuRCQe0nMh0zh7Wje?usp=drive_link"
+          target="_blank"
           method="post"
         >
           <label class="label" for="name">Name :</label>
-          <input class="form" type="text" /><br />
+          <input class="form" type="text" name="name-input" /><br />
           <label class="label" for="date">Birth date :</label>
           <input class="form" type="date" /><br />
           <label class="label" for="date">Gender :</label>
@@ -112,9 +143,15 @@
           <input type="radio" id="Female" name="gender" value="Female" />
           <label class="label" for="Female">Female</label><br />
           <label id="mes" class="label" for="message">Message :</label>
-          <textarea id="mes-area" class="form" name="message" id="message">
-              Type here...</textarea
-          >
+          <textarea
+            id="mes-area"
+            class="form"
+            name="message"
+            id="message"
+            placeholder="Type here..."
+          ></textarea
+          ><br />
+          <button id="submit" type="submit">Submit</button>
         </form>
       </div>
     </main>
@@ -122,5 +159,7 @@
     <footer class="footer">
       <p class="body">Created by Rels</p>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
