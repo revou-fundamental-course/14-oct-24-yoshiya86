@@ -6,11 +6,26 @@ p {
 a {
   text-decoration: none;
 }
+button {
+  background-color: rgb(1, 1, 90);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 7px 10px 7px 10px;
+  font-family: Amaranth;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+button:hover {
+  background-color: rgb(255, 193, 204);
+  color: rgb(1, 1, 90);
+}
 html {
   scroll-behavior: smooth;
 }
 body {
-  margin: 65px 100px 0 100px;
+  margin: 80px 100px 0 100px;
   overflow-x: hidden;
 }
 .section {
@@ -19,6 +34,7 @@ body {
 
 .header {
   display: flex;
+  gap: 50px;
   justify-content: end;
   align-items: center;
   background-color: rgb(55, 212, 255);
@@ -48,6 +64,15 @@ body {
   color: rgb(255, 231, 235);
 }
 
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.left {
+  width: 350px;
+}
 .title {
   font-size: 36px;
   font-weight: 700;
@@ -56,11 +81,13 @@ body {
 .body {
   font-size: 18px;
 }
-.home .body {
-  margin-bottom: 20px;
+.js {
+  margin-top: 10px;
+}
+.banner {
+  width: 950px;
 }
 .slideshow {
-  height: 600px;
   width: 100%;
   object-fit: cover;
 }
@@ -126,8 +153,43 @@ body {
   height: 45px;
 }
 
-@media (min-width: 650px) {
+@media (max-width: 650px) {
   body {
-    margin: 65px 50px 0 50px;
+    margin: 80px 50px 0 50px;
+  }
+  .header {
+    padding: 0px 50px 0px 50px;
+  }
+  .home {
+    flex-direction: column;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .banner {
+    width: 100%;
+  }
+  .porto {
+    flex-direction: column;
+  }
+}
+@media (min-width: 650px) and (max-width: 999px) {
+  body {
+    margin: 80px 100px 0 100px;
+  }
+  .header {
+    padding: 0px 50px 0px 50px;
+  }
+  .home {
+    flex-direction: column;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .banner {
+    width: 100%;
+  }
+  .porto {
+    flex-direction: column;
   }
 }
