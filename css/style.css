@@ -44,6 +44,7 @@ body {
   right: 0;
   padding: 0px 100px 0px 100px;
   height: 55px;
+  z-index: 2;
 }
 .logohead {
   justify-self: start;
@@ -57,6 +58,7 @@ body {
   gap: 30px;
 }
 .nav {
+  font-size: 16px;
   cursor: pointer;
   transition: color 0.2s;
 }
@@ -86,10 +88,24 @@ body {
 }
 .banner {
   width: 950px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.photo {
+  width: 850px;
 }
 .slideshow {
   width: 100%;
   object-fit: cover;
+}
+.slide {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .porto {
@@ -153,12 +169,15 @@ body {
   height: 45px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 600px) {
   body {
     margin: 80px 50px 0 50px;
   }
   .header {
     padding: 0px 50px 0px 50px;
+  }
+  .nav {
+    font-size: 14px;
   }
   .home {
     flex-direction: column;
@@ -173,7 +192,7 @@ body {
     flex-direction: column;
   }
 }
-@media (min-width: 650px) and (max-width: 999px) {
+@media (min-width: 600px) and (max-width: 999px) {
   body {
     margin: 80px 100px 0 100px;
   }
