@@ -30,7 +30,48 @@ function showDivs(n) {
 
   slides[slideIndex - 1].style.display = "block";
 }
+var form = document.getElementById("messageForm");
+function validation(e) {
+  e.preventDefault();
+  let inputName = document.getElementById("name-input").value;
+  let inputBirthday = document.getElementById("date").value;
+  let inputGender = document.getElementById("Male").checked
+    ? "Male"
+    : document.getElementById("Female").checked
+    ? "Female"
+    : "";
+  let inputMessage = document.getElementById("msg-area").value;
+  // let inputGender = "";
+  // let inputMale = document.getElementById("Male").checked;
+  // let inputFemale = document.getElementById("Female").checked;
+  // if (inputMale === true) {
+  //   inputGender = Male;
+  // } else if (inputFemale === true) {
+  //   inputGender = Female;
+  // }
+  console.log("gender", inputGender);
+  if (
+    inputName !== "" &&
+    inputBirthday !== "" &&
+    inputGender !== "" &&
+    inputMessage !== ""
+  ) {
+    document.getElementById("name").innerHTML = inputName;
+    document.getElementById("bday").innerHTML = inputBirthday;
+    document.getElementById("gender").innerHTML = inputGender;
+    document.getElementById("msg").innerHTML = inputMessage;
+    return;
+  }
+  return alert("Some Field are Empty!");
 
+  console.log("date", inputBirthday);
+  // if (inputBirthday === "") {
+  //   alert("Some field are empty");
+  // } else {
+  //   console.log(inputBirthday);
+  // }
+}
+form.addEventListener("submit", validation);
 /*
 setInterval(() => {
   plusDivs(1);
