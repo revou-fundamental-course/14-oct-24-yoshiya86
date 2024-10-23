@@ -140,6 +140,23 @@ body {
   opacity: 1;
 }
 
+.message {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.content {
+  display: flex;
+  align-items: start;
+}
+.content-res {
+  display: flex;
+  align-items: center;
+  width: 800px;
+}
+.table1 {
+  width: 100px;
+}
 .label {
   font-family: Amaranth;
   color: rgb(1, 1, 90);
@@ -154,10 +171,19 @@ body {
   color: rgb(1, 1, 90);
   font-size: 16px;
   margin-bottom: 10px;
+  margin-left: 5px;
   width: 300px;
 }
-#mes {
-  float: left;
+.result {
+  padding: 20px;
+  background-color: rgb(202, 244, 255);
+  border-radius: 20px;
+}
+.sub {
+  font-family: Amaranth;
+  color: rgb(1, 1, 90);
+  font-size: 18px;
+  text-align: left;
 }
 
 .footer {
@@ -185,11 +211,21 @@ body {
   .title {
     font-size: 24px;
   }
+  .left {
+    width: 100%;
+  }
   .banner {
     width: 100%;
   }
   .porto {
     flex-direction: column;
+  }
+  .message {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .result {
+    width: 100%;
   }
 }
 @media (min-width: 600px) and (max-width: 999px) {
@@ -205,10 +241,20 @@ body {
   .title {
     font-size: 24px;
   }
+  .left {
+    width: 100%;
+  }
   .banner {
     width: 100%;
   }
   .porto {
     flex-direction: column;
+  }
+  .message {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .result {
+    width: 100%;
   }
 }

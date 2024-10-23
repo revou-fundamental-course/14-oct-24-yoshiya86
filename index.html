@@ -135,32 +135,110 @@
       </div>
 
       <div id="message" class="section message">
-        <p class="title">Message Us</p>
-        <form
-          action="https://drive.google.com/drive/folders/1t6JSS9jrxsNL9WDLuRCQe0nMh0zh7Wje?usp=drive_link"
-          target="_blank"
-          method="post"
-        >
-          <label class="label" for="name">Name :</label>
-          <input class="form" type="text" name="name-input" /><br />
-          <label class="label" for="date">Birth date :</label>
-          <input class="form" type="date" /><br />
-          <label class="label" for="date">Gender :</label>
-          <input type="radio" id="Male" name="gender" value="Male" />
-          <label class="label" for="Male">Male</label>
-          <input type="radio" id="Female" name="gender" value="Female" />
-          <label class="label" for="Female">Female</label><br />
-          <label id="mes" class="label" for="message">Message :</label>
-          <textarea
-            id="mes-area"
-            class="form"
-            name="message"
-            id="message"
-            placeholder="Type here..."
-          ></textarea
-          ><br />
-          <button id="submit" type="submit">Submit</button>
-        </form>
+        <div class="input">
+          <p class="title">Message Us</p>
+
+          <form id="messageForm">
+            <div class="content">
+              <label class="label" for="name">
+                <table>
+                  <tr>
+                    <th class="table1">Name</th>
+                    <th>:</th>
+                  </tr>
+                </table></label
+              >
+              <input
+                class="form"
+                type="text"
+                id="name-input"
+                name="name-input"
+              />
+            </div>
+            <div class="content">
+              <label class="label" for="date"
+                ><table>
+                  <tr>
+                    <th class="table1">Birth date</th>
+                    <th>:</th>
+                  </tr>
+                </table></label
+              >
+              <input class="form" type="date" id="date" />
+            </div>
+            <div class="content">
+              <label class="label" for="date"
+                ><table>
+                  <tr>
+                    <th class="table1">Gender</th>
+                    <th>:</th>
+                  </tr>
+                </table></label
+              >
+              <input type="radio" id="Male" name="gender" value="Male" />
+              <label class="label" for="Male">Male</label>
+              <input type="radio" id="Female" name="gender" value="Female" />
+              <label class="label" for="Female">Female</label>
+            </div>
+            <div class="content">
+              <label id="mes" class="label" for="message"
+                ><table>
+                  <tr>
+                    <th class="table1">Message</th>
+                    <th>:</th>
+                  </tr>
+                </table></label
+              >
+              <textarea
+                id="msg-area"
+                class="form"
+                name="message"
+                placeholder="Type here..."
+              ></textarea>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+          </form>
+        </div>
+
+        <div class="result">
+          <p class="title">Result</p>
+          <div class="content-res">
+            <table>
+              <tr>
+                <th class="table1 sub">Name</th>
+                <th>:</th>
+              </tr>
+            </table>
+            <p id="name">-</p>
+          </div>
+          <div class="content-res">
+            <table>
+              <tr>
+                <th class="table1 sub">Birth date</th>
+                <th>:</th>
+              </tr>
+            </table>
+            <p id="bday">-</p>
+          </div>
+          <div class="content-res">
+            <table>
+              <tr>
+                <th class="table1 sub">Gender</th>
+                <th>:</th>
+              </tr>
+            </table>
+            <p id="gender">-</p>
+          </div>
+          <div class="content-res">
+            <table>
+              <tr>
+                <th class="table1 sub">Message</th>
+                <th>:</th>
+              </tr>
+            </table>
+            <p id="msg">-</p>
+          </div>
+        </div>
       </div>
     </main>
 
